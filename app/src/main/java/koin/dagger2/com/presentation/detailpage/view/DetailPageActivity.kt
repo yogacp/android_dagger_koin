@@ -36,7 +36,7 @@ class DetailPageActivity : AppCompatActivity(), DetailPageContract.View {
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        when (item!!.getItemId()) {
+        when (item!!.itemId) {
             android.R.id.home -> onBackPressed()
         }
         return true

@@ -1,7 +1,6 @@
 package koin.dagger2.com.presentation.homepage.router
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import koin.dagger2.com.domain.router.ScreenRouter
 import koin.dagger2.com.external.constant.AppConstant
 import koin.dagger2.com.presentation.homepage.contract.HomePageContract
@@ -10,7 +9,7 @@ import koin.dagger2.com.presentation.homepage.contract.HomePageContract
  * Created by Yoga C. Pranata on 14/01/2019.
  * Android Engineer
  */
-class HomepageRouter (
+class HomepageRouter(
     val mScreenRouter: ScreenRouter,
     val mContext: Context
 ) : HomePageContract.Router {

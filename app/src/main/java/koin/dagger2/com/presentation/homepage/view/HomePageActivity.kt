@@ -44,7 +44,7 @@ class HomePageActivity : AppCompatActivity(), HomePageContract.View, SwipeRefres
         setContentView(R.layout.activity_homepage)
 
         presenter.onAttachedView(this)
-        mLayoutManager = GridLayoutManager(applicationContext, 1) as RecyclerView.LayoutManager
+        mLayoutManager = GridLayoutManager(applicationContext, 1)
         mainSwipeLayout.setOnRefreshListener(this)
         setupToolbar(resources.getString(R.string.menu_football_list))
     }
